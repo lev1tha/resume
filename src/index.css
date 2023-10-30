@@ -1,13 +1,181 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, 'Montserrat' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #595959;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container-header{
+  animation: Header 4s ease-out;
+  padding: 10px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+/* animation header block */
+
+@keyframes Header{
+  0%{
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(60px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.container-header .logo h1{
+  color: #B9B9B9;
+  cursor: pointer;
+  font-size: 44px;
+  font-family: -apple-system, 'Montserrat' sans-serif;
+}
+
+.container-header .navblock nav{
+  display: flex;
+  gap: 20px;
+}
+
+.container-header .navblock nav a{
+  display: flex;
+  color: #DBDBDB;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 22px;
+  font-family: 'Montserrat';
+}
+
+/* main swip settings */
+
+.swip{
+  animation: Swiper 8s ease;
+  width: 100%;
+  height: 100vh;
+  background-color: #FAF8FF;
+}
+
+@keyframes Swiper {
+  0%{
+    transform: translateY(200%);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+/* main swiper inside */
+
+.container-about {
+  padding: 10px 180px 10px 280px;
+}
+
+.container-about .upper-section{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.container-about .upper-section .title h1{
+  font-size: 32px;
+  font-family: 'Montserrat';
+  color: #787878;
+}
+
+.container-about .upper-section .title .context-info p{
+  font-size: 22px;
+  font-family: 'Montserrat';
+  color: #989898;
+}
+
+.container-about .upper-section .title .context-info p span{
+  font-size: 18px;
+  font-family: 'Montserrat';
+  color: #989898;
+}
+
+.container-about .down-section .title .context-info a{
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Montserrat';
+  color: #989898;
+}
+
+.container-about .down-section .title h1{
+  font-size: 32px;
+  font-family: 'Montserrat';
+  color: #787878;
+}
+
+section {
+  height: 100vh;
+  position: relative;
+}
+
+section h3{
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
+  opacity: .8;
+  color: #FAF8FF;
+}
+
+.fixed{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: antiquewhite;
+}
+
+.container-skill{
+  width: 65%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 180px 10px 280px;
+}
+
+.container-skill .hard-skill .title h1{
+  font-size: 32px;
+  font-family: 'Montserrat';
+  color: #787878;
+}
+
+.container-skill .hard-skill .title .context-info p{
+  font-size: 22px;
+  font-family: 'Montserrat';
+  color: #989898;
+}
+
+
+
+.container-skill .soft-skill .title h1{
+  font-size: 32px;
+  font-family: 'Montserrat';
+  color: #787878;
+}
+
+.container-skill .soft-skill .title .context-info p{
+  font-size: 22px;
+  font-family: 'Montserrat';
+  color: #989898;
+}
+
+.company{
+  position: relative;
+  z-index: 101;
+  height: 100vh;
+  width: 100%;
+  background-color: #FAF8FF;
+}
+
+
