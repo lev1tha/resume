@@ -1,4 +1,9 @@
+import Play from "./components/csgo/Play";
+import {React,useState} from "react";
+
 function App() {
+
+  const [singlCSGO,useSingleCSGO] = useState(true)
 
   return (
     <div className="App">
@@ -9,7 +14,7 @@ function App() {
           </div>
           <div className="navblock">
             <nav>
-              <a href="#about">About</a>
+              <a href="">About</a>
               <a href="">Skill</a>
               <a href="">Company</a>
               <a href="">Contact</a>
