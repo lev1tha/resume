@@ -1,9 +1,9 @@
 import Play from "./components/csgo/Play";
-import {React,useState} from "react";
+import { React, useState } from "react";
 
 function App() {
 
-  const [singlCSGO,useSingleCSGO] = useState(true)
+  const [singlCSGO, useSingleCSGO] = useState(true)
 
 
   return (
@@ -55,19 +55,19 @@ function App() {
                   <div className="title">
                     <h1>Hobbies</h1>
                     <div className="context-info">
-                      <a href="">CS:GO</a> 
+                      <a href="">CS:GO</a>
                       <br />
                       <br />
-                      <a href="">Mobilography</a> 
+                      <a href="">Mobilography</a>
                       <br />
                       <br />
-                      <a href="">Football</a> 
+                      <a href="">Football</a>
                       <br />
                       <br />
-                      <a href="">VolleyBall</a> 
+                      <a href="">VolleyBall</a>
                       <br />
                       <br />
-                      <a href="">Barista</a> 
+                      <a href="">Barista</a>
                     </div>
                   </div>
                 </div>
@@ -117,10 +117,18 @@ function App() {
           <h3>PROlab</h3>
         </section>
 
-        <section>
+        <section className="company-section">
           <article className="company">
             <div className="container-company">
-
+              <div className="title">
+                <h1>PROlab Academy | <span>Mentor</span></h1>
+              </div>
+              <div className="title">
+                <h1>PROlab Media | <span>Mobilography</span></h1>
+              </div>
+              <div className="title">
+                <h1>PROlab Agency | <span>Trainee</span></h1>
+              </div>
             </div>
           </article>
         </section>

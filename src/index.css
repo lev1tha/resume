@@ -174,9 +174,36 @@ section h3{
 .company{
   position: relative;
   z-index: 101;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   background-color: #FAF8FF;
 }
 
+.container-company{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.container-company .title{
+  width: 455px;
+}
+
+.container-company .title h1{
+  text-align: center;
+  color: #595959;
+  font-size: 52px;
+  font-family: serif 'Montserrat';
+}
+
+.container-company span{
+  font-size: 36px;
+  display: inline;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.company-section{
+  height: 50vh;
+}
